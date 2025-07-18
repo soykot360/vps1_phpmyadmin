@@ -12,6 +12,8 @@ services:
     environment:
       - PMA_HOST=172.18.99.1
       - PMA_ABSOLUTE_URI=https://phpsql.datanen.vip
+      - MAX_EXECUTION_TIME=600
+      - UPLOAD_LIMIT=512M
 
     labels:
       - "traefik.enable=true"

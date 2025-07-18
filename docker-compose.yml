@@ -10,6 +10,7 @@ services:
       traefik_proxy:
 
     environment:
+      - TZ=Asia/Dhaka
       - PMA_HOST=172.18.99.1
       - PMA_ABSOLUTE_URI=https://phpsql.datanen.vip
       - MAX_EXECUTION_TIME=600

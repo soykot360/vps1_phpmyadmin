@@ -16,7 +16,7 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.phpmyadmin.entrypoints=http,https"      
-      - "traefik.http.routers.phpmyadmin.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.phpmyadmin.tls.certresolver=cloudflare"
       - "traefik.http.routers.phpmyadmin.tls=true"
       - "traefik.http.routers.phpmyadmin.rule=Host(`phpsql.datanen.vip`)"
       - "traefik.http.routers.phpmyadmin.middlewares=redirect-to-https"
